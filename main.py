@@ -1,7 +1,17 @@
-import calendar
+class player:
+    def play(self):
+       print("The player is playing cricket.")
+      
+class Batsman(player):
+   def play(self):
+       print ("The batsman is batting.")
+     
+class Bowler(player):
+    def play(self):
+        print ("The bowler is bowling.")
+      
+batsman = Batsman()
+bowler = Bowler()
 
-year = int(input("enter a year"))
-if calendar.isleap(year):
-  print("it is a leap year")
-else:
-  print("it is not a leap year")
+batsman.play()    
+bowler.play()
